@@ -10,9 +10,10 @@ def random_presents():
     result = []
     for it in sorted(family):
         target = random.choice(family)
-        while target == it:
+        while target and target == it:
             target = random.choice(family)
         result.append((it, target))
+        family.remove(target)
 
     print(f'Total combinations: {len(result)}')
     print('=' * 30)
