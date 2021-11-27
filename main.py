@@ -15,10 +15,10 @@ def random_presents():
         result.append((it, target))
 
     print(f'Total combinations: {len(result)}')
-    print("=" * 30)
+    print('=' * 30)
     for idx, it in enumerate(result, start=1):
         print(f'0{idx}'[-2:], it[0], ' -> ', it[1])
-    print("=" * 30)
+    print('=' * 30)
 
 
 if __name__ == '__main__':
